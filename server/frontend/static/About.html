@@ -1,6 +1,7 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -12,10 +13,10 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
+            <a class="nav-link active" style="font-size: larger;" href="/about" aria-current="page">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
@@ -26,37 +27,45 @@
   </nav>
   
     <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
+      <div class="banner text-center" name="about-header">
+        <h1>About Us</h1>
+        <div class="mx-auto" style="width: 90%;">Welcome to Best Cars dealership, your trusted source for the best cars in North America. We offer a diverse inventory of domestic 
+        and imported cars at reasonable prices, providing exceptional value and building lasting relationships with our customers.</div>
       </div>
       <div style="display: flex;flex-direction: row; margin:auto">
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+        <div class="ratio ratio-1x1">
+            <img class="card-img-top" src="/static/person1.jpg" alt="Card image">
+        </div>
+        <div class="card-body text-center">
+          <p class="title">Sam</p>
+          <p class="card-subtitle mb-2 fw-bold">Developer</p>
+          <p class="card-text lh-sm">Our innovative website and digital tools are crafted by our skilled developer. They ensure a seamless online experience for our customers, making car shopping efficient and enjoyable</p>
+          <p class="fw-light">sam@gmail.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+        <div class="ratio ratio-1x1">
+            <img class="card-img-top" src="/static/person2.png" alt="Card image">
+        </div>
+        <div class="card-body text-center">
+          <p class="title">Larry</p>
+          <p class="card-subtitle mb-2 fw-bold">CEO</p>
+          <p class="card-text lh-sm">As our CEO, they drive the vision and strategy of Best Cars dealership. Their leadership focuses on providing exceptional customer service and a wide selection of quality vehicles</p>
+          <p class="fw-light">larry@example.com</p>
         </div>
       </div>
 
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+        <div class="ratio ratio-1x1">
+            <img class="card-img-top" src="/static/person3.jpg" alt="Card image">
+        </div>
+        <div class="card-body text-center">
+          <p class="title">John</p>
+          <p class="card-subtitle mb-2 fw-bold">Manager</p>
+          <p class="card-text lh-sm">Our dedicated manager oversees daily operations and customer relations. They are committed to ensuring every customer receives personalized attention and finds the perfect car to meet their needs</p>
+          <p class="fw-light">john@gmail.com</p>
         </div>
       </div>
     </div>
