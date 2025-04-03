@@ -1,6 +1,5 @@
 # Uncomment the required imports before adding the code
 
-from django.shortcuts import render
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
 
@@ -28,7 +27,7 @@ def get_cars(request):
     cars = []
     for car_model in car_models:
         cars.append({
-            "CarModel": car_model.name, 
+            "CarModel": car_model.name,
             "CarMake": car_model.car_make.name
         })
     return JsonResponse({"CarModels": cars})
@@ -142,7 +141,7 @@ def add_review(request):
         except Exception as e:
             print(e)
             return JsonResponse({
-                "status": 400, 
+                "status": 400,
                 "message": "Error in posting review"
             })
     else:
