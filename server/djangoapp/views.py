@@ -62,7 +62,6 @@ def logout_request(request):
 def registration(request):
     data = json.loads(request.body)
 
-    data = {"username": ""}
     username = data["userName"]
     password = data["password"]
     first_name = data["firstName"]
