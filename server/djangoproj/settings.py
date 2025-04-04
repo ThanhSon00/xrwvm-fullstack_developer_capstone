@@ -27,16 +27,18 @@ SECRET_KEY = "django-insecure-ccow$tz_=9%dxu4" \
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+ALLOWED_HOSTS = os.environ.get(
+    "ALLOWED_HOSTS",
+    "https://phanson99999-8000.theiadockernext-1-labs-prod-"
+    "theiak8s-4-tor01.proxy.cognitiveclass.ai,"
+    "localhost"
+).split(',')
 
-ALLOWED_HOSTS = [
-    "localhost",
+CSRF_TRUSTED_ORIGINS = os.environ.get(
+    "CSRF_TRUSTED_ORIGINS",
     "https://phanson99999-8000.theiadockernext-1-labs-prod-"
     "theiak8s-4-tor01.proxy.cognitiveclass.ai"
-]
-CSRF_TRUSTED_ORIGINS = [
-    "https://phanson99999-8000.theiadockernext-1-labs-prod-"
-    "theiak8s-4-tor01.proxy.cognitiveclass.ai"
-]
+).split(',')
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": [],

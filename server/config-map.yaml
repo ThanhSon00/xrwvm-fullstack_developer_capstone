@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: my-config
+data:
+  ALLOWED_HOSTS: "150.239.84.82"
+  CSRF_TRUSTED_ORIGINS: "http://150.239.84.82:8000"
